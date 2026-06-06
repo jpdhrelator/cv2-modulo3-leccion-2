@@ -1,0 +1,40 @@
+.theme-dark.l-app {
+    background: #1b1f2c;
+    color: #e8eaf2;
+}
+
+.theme-dark .l-sidebar {
+    background: #11141d;
+}
+
+.theme-dark .l-header {
+    border-bottom: 1px solid #262b3a;
+}
+
+.theme-dark .card {
+    background: #161924;
+    border-color: #262b3a;
+}
+
+.theme-dark .stat {
+    background: #161924;
+    border-color: #262b3a;
+}
+
+.theme-dark .nav-item {
+    color: #c8cce0;
+}
+
+.theme-dark .nav-item:hover {
+    background: #262b3a;
+}
+
+.theme-dark .btn {
+    background: #6c5ce7;
+    color: #fff;
+}
+
+.theme-dark .toggle {
+    color: #c8cce0;
+    border-color: #262b3a;
+}

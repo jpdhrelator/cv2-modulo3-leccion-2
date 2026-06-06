@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SMACSS Ejemplo 1</title>
+        <link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="assets/css/layout.css">
+        <link rel="stylesheet" href="assets/css/module.css">
+        <link rel="stylesheet" href="assets/css/state.css">
+        <link rel="stylesheet" href="assets/css/theme.css">
+    </head>
+    <body>
+        <div class="l-app" id="app">
+            <aside class="l-sidebar">
+                <p class="card__title" style="margin-bottom:14px">◆ Panel</p>
+                <ul>
+                    <li><a class="nav-item is-active" href="#">Inicio</a></li>
+                    <li><a class="nav-item" href="#">Ventas</a></li>
+                    <li><a class="nav-item" href="#">Usuarios</a></li>
+                    <li><a class="nav-item" href="#">Ajustes</a></li>
+                </ul>
+            </aside>
+            <section class="l-content">
+                <div class="l-header">
+                    <h2>Resumen</h2>
+                    <button class="btn">Nuevo</button>
+                </div>
+                <div class="l-grid">
+                    <div class="stat">
+                        <div class="stat__num">1.284</div>
+                        <div class="stat__label">Visitas</div>
+                    </div>
+                    <div class="stat" id="statVentas">
+                        <div class="stat__num">$ 8.4k</div>
+                        <div class="stat__label">Ventas</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__num">312</div>
+                        <div class="stat__label">Usuarios</div>
+
+                    </div>
+                </div>
+                <div class="card" id="panelDetalle" style="margin-top:14px">
+                    <div class="card__title">Detalle</div>
+                    <p class="card__meta">Este panel se puede colapsar con un
+                        estado (.is-collapsed).</p>
+                </div>
+            </section>
+        </div>
+        <div style="margin-top:14px; display:flex; gap:8px; flex-wrap:wrap">
+            <button class="btn"
+                onclick="document.getElementById('panelDetalle').classList.toggle('is-collapsed')">Colapsar
+                detalle (.is-collapsed)</button>
+            <button class="btn"
+                onclick="document.getElementById('statVentas').classList.toggle('is-success')">Marcar
+                venta OK (.is-success)</button>
+            <button class="btn"
+                onclick="document.getElementById('app').classList.toggle('theme-dark')">Cambiar
+                theme (.theme-dark)</button>
+        </div>
+    </body>
+</html>

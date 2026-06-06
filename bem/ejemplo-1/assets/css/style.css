@@ -1,0 +1,30 @@
+.button {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-weight: 700;
+    transition: filter .15s ease;
+}
+.button:hover { 
+    filter: brightness(1.05); 
+}
+.button--primary {
+    background: #6c5ce7;
+    color: #dedcdc;
+}
+.button--secondary {
+    background: transparent;
+    color: #6c5ce7;
+    border-color: #6c5ce7;
+}
+
+.button--success {
+    background: #0ce513;
+    color: #dedcdc;
+}
+
+.button--error {
+    background: #d80404;
+    color: #211e1e;
+}

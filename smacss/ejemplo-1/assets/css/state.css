@@ -1,0 +1,22 @@
+.is-active {
+    background: #6c5ce7 !important;
+    color: #fff !important;
+}
+
+.is-collapsed {
+    display: none;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.is-loading {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.is-success {
+    border-color: #00b894 !important;
+    box-shadow: 0 0 0 2px rgba(0, 184, 148, .25);
+}

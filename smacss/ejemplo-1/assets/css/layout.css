@@ -1,0 +1,35 @@
+.l-app {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 0;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.l-sidebar {
+    padding: 18px;
+}
+
+.l-content {
+    padding: 18px 22px;
+}
+
+.l-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+}
+
+.l-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+}
+
+@media (max-width: 640px) {
+    .l-app {
+        grid-template-columns: 1fr;
+    }
+}
