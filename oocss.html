@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reto 2 · OOCSS — Actividad Metodologías CSS</title>
+  <script src="assets/site.js"></script>
+  <link rel="stylesheet" href="assets/site.css" />
+  <link rel="stylesheet" href="assets/activity.css" />
+  <script src="assets/checklist.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="index.html"><span class="dot"></span> Actividad · Metodologías CSS</a>
+      <nav class="topbar__nav">
+        <a class="navlink" href="bem.html">Reto BEM</a>
+        <a class="navlink" href="oocss.html">Reto OOCSS</a>
+        <a class="navlink" href="smacss.html">Reto SMACSS</a>
+        <a class="navlink" href="entrega.html">Entrega</a>
+        <button id="themeToggle" class="theme-toggle" type="button">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <a class="back" href="index.html">← Todos los retos</a>
+    <span class="tag-method tag-oocss">Reto 2 · OOCSS</span>
+    <h1>El kit de avisos</h1>
+
+    <div class="scene">
+      <h2>El escenario</h2>
+      <p>Tu app necesita mostrar mensajes por todas partes: "Guardado con éxito", "Cuidado con esto", "Algo salió mal", "Dato interesante". El problema: cada programador los está estilando por su cuenta y hay 12 versiones distintas del mismo aviso. Tu trabajo es crear <strong>un kit de avisos reutilizable</strong> aplicando OOCSS, para que todos usen las mismas piezas.</p>
+    </div>
+
+    <section class="section">
+      <h2>Tu misión</h2>
+      <p class="lead">Crea un <strong>sistema de avisos / notificaciones</strong> que incluya:</p>
+      <div class="mission">
+        <div class="mission__item"><span class="mission__num">1</span><div>Al menos <strong>cuatro tipos</strong> de aviso: éxito, advertencia, error e información.</div></div>
+        <div class="mission__item"><span class="mission__num">2</span><div>Que la <strong>forma</strong> del aviso (espaciado, bordes, tamaño) se defina <strong>una sola vez</strong>.</div></div>
+        <div class="mission__item"><span class="mission__num">3</span><div>Que el <strong>color / aspecto</strong> de cada tipo viva en clases aparte.</div></div>
+        <div class="mission__item"><span class="mission__num">4</span><div>Un <strong>segundo objeto distinto</strong> (por ejemplo, una etiqueta o "chip") que <strong>reutilice los mismos colores</strong> del aviso.</div></div>
+        <div class="mission__item"><span class="mission__num">5</span><div>Una <strong>franja/contenedor de ancho</strong> reutilizable que uses en más de un lugar de la página.</div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Requisitos obligatorios</h2>
+      <div class="progress-wrap">
+        <div class="progress-bar"><div class="progress-fill"></div></div>
+        <div class="progress-text">0 de 0</div>
+      </div>
+      <ul class="checklist">
+        <li><label><input type="checkbox"><span><strong>Estructura separada de la piel:</strong> una clase da la forma; otras clases dan solo el color/aspecto. Se combinan en el HTML.</span></label></li>
+        <li><label><input type="checkbox"><span>La misma clase de <strong>color (skin)</strong> se usa en <strong>dos objetos diferentes</strong> (el aviso y otro componente).</span></label></li>
+        <li><label><input type="checkbox"><span><strong>Contenedor separado del contenido:</strong> tu objeto se ve igual sin importar dónde lo pongas; no hay reglas que dependan del padre.</span></label></li>
+        <li><label><input type="checkbox"><span>Tienes una <strong>clase de ancho/contenedor reutilizable</strong> aplicada en al menos <strong>dos secciones</strong>.</span></label></li>
+        <li><label><input type="checkbox"><span><strong>Cero código repetido:</strong> si copiaste y pegaste el mismo bloque de propiedades, lo convertiste en un objeto reutilizable.</span></label></li>
+        <li><label><input type="checkbox"><span>Demuestras la reutilización colocando el mismo objeto en <strong>dos contenedores distintos</strong> (p. ej. cabecera y cuerpo) y se ve idéntico.</span></label></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Pista (sin spoilers)</h2>
+      <p class="lead">OOCSS se apoya en dos preguntas. Úsalas como guía, no te damos el código:</p>
+      <span class="pill-hint">¿Qué es FORMA y qué es COLOR?</span>
+      <span class="pill-hint">¿Esto depende de dónde vive, o funciona en cualquier lado?</span>
+      <p class="lead" style="margin-top:12px">Truco mental: imagina que mañana te piden un aviso "morado". Si solo tienes que crear una clase de color nueva y nada más, vas por buen camino.</p>
+    </section>
+
+    <section class="section">
+      <div class="bonus">
+        <strong>Reto extra (opcional):</strong> agrega un quinto tipo de aviso <em>sin tocar</em> la clase de estructura: solo creando una nueva clase de color. Si lo logras, has entendido OOCSS.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>¿Cómo sé que está bien?</h2>
+      <p class="lead">Cambia un aviso de "éxito" a "error" <strong>cambiando una sola clase</strong> en el HTML, sin tocar el CSS de estructura. Si funciona, lo lograste.</p>
+    </section>
+
+    <div class="reto-nav">
+      <a href="bem.html">← Reto BEM</a>
+      <a href="smacss.html">Siguiente: Reto SMACSS →</a>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">Reto 2 · OOCSS — Actividad Lección 2.</div></footer>
+</body>
+</html>

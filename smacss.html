@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reto 3 · SMACSS — Actividad Metodologías CSS</title>
+  <script src="assets/site.js"></script>
+  <link rel="stylesheet" href="assets/site.css" />
+  <link rel="stylesheet" href="assets/activity.css" />
+  <script src="assets/checklist.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="index.html"><span class="dot"></span> Actividad · Metodologías CSS</a>
+      <nav class="topbar__nav">
+        <a class="navlink" href="bem.html">Reto BEM</a>
+        <a class="navlink" href="oocss.html">Reto OOCSS</a>
+        <a class="navlink" href="smacss.html">Reto SMACSS</a>
+        <a class="navlink" href="entrega.html">Entrega</a>
+        <button id="themeToggle" class="theme-toggle" type="button">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <a class="back" href="index.html">← Todos los retos</a>
+    <span class="tag-method tag-smacss">Reto 3 · SMACSS</span>
+    <h1>El mini-dashboard</h1>
+
+    <div class="scene">
+      <h2>El escenario</h2>
+      <p>Te contratan para mantener un panel de administración. Abres el proyecto y... hay <strong>un solo archivo CSS de 2000 líneas</strong> donde todo está mezclado: resets, estructura, botones, estados y colores. Nadie sabe dónde tocar. Tu misión: construir un mini-dashboard desde cero pero con el CSS <strong>ordenado por categorías</strong>, al estilo SMACSS, para que cada cosa tenga su lugar.</p>
+    </div>
+
+    <section class="section">
+      <h2>Tu misión</h2>
+      <p class="lead">Construye un <strong>mini-dashboard</strong> (o una lista de tareas, o una landing corta) que tenga:</p>
+      <div class="mission">
+        <div class="mission__item"><span class="mission__num">1</span><div>Una <strong>estructura de página</strong> con al menos dos zonas (por ejemplo, barra lateral + contenido).</div></div>
+        <div class="mission__item"><span class="mission__num">2</span><div>Al menos <strong>dos componentes reutilizables</strong> (tarjetas, items de menú, botones, "stats"…).</div></div>
+        <div class="mission__item"><span class="mission__num">3</span><div>Al menos <strong>dos estados</strong> que cambien con un clic (activo, colapsado, oculto, completado…).</div></div>
+        <div class="mission__item"><span class="mission__num">4</span><div>Un <strong>tema</strong> (paleta de colores) que se pueda cambiar sin tocar la estructura.</div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Requisitos obligatorios</h2>
+      <div class="progress-wrap">
+        <div class="progress-bar"><div class="progress-fill"></div></div>
+        <div class="progress-text">0 de 0</div>
+      </div>
+      <ul class="checklist">
+        <li><label><input type="checkbox"><span>Separas tu CSS en <strong>cinco archivos</strong>: <code>base.css</code>, <code>layout.css</code>, <code>module.css</code>, <code>state.css</code> y <code>theme.css</code>.</span></label></li>
+        <li><label><input type="checkbox"><span><strong>Base:</strong> solo estilos sobre etiquetas (sin clases ni id's). Es tu "reset ampliado".</span></label></li>
+        <li><label><input type="checkbox"><span><strong>Layout:</strong> la estructura/secciones de la página, con un prefijo claro (p. ej. <code>l-</code>).</span></label></li>
+        <li><label><input type="checkbox"><span><strong>Module:</strong> al menos <strong>dos módulos</strong> reutilizables e independientes.</span></label></li>
+        <li><label><input type="checkbox"><span><strong>State:</strong> al menos <strong>dos estados</strong> con prefijo <code>is-</code>, activados con <strong>JavaScript</strong> (un botón que añade/quita la clase).</span></label></li>
+        <li><label><input type="checkbox"><span><strong>Theme:</strong> solo colores/tipografía, en su archivo aparte.</span></label></li>
+        <li><label><input type="checkbox"><span>Enlazas los 5 archivos en tu HTML <strong>en orden</strong> (base → layout → module → state → theme).</span></label></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Pista (sin spoilers)</h2>
+      <p class="lead">Antes de escribir una regla, pregúntate <strong>"¿de qué categoría es esto?"</strong> y guárdala en el archivo correcto:</p>
+      <span class="pill-hint">Base · etiquetas</span>
+      <span class="pill-hint">Layout · l-</span>
+      <span class="pill-hint">Module · reutilizable</span>
+      <span class="pill-hint">State · is-</span>
+      <span class="pill-hint">Theme · colores</span>
+      <p class="lead" style="margin-top:12px">Para los estados necesitarás un poquito de JavaScript: un botón que haga <em>toggle</em> de una clase. No te decimos cómo escribirlo; piensa en "añadir/quitar una clase al hacer clic".</p>
+    </section>
+
+    <section class="section">
+      <div class="bonus">
+        <strong>Reto extra (opcional):</strong> haz que el botón de tema cambie entre claro y oscuro modificando <strong>solo</strong> la clase de tema en un contenedor, sin tocar layout ni módulos.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>¿Cómo sé que está bien?</h2>
+      <p class="lead">Abre cada uno de tus 5 archivos CSS. Si cualquier regla está claramente en la categoría que le toca (y no tienes dudas de dónde va cada cosa), lo lograste. Y tus estados deben cambiar al hacer clic.</p>
+    </section>
+
+    <div class="reto-nav">
+      <a href="oocss.html">← Reto OOCSS</a>
+      <a href="entrega.html">Siguiente: Entrega →</a>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">Reto 3 · SMACSS — Actividad Lección 2.</div></footer>
+</body>
+</html>

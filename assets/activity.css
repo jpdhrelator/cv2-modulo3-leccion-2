@@ -1,0 +1,46 @@
+/* activity.css — estilos propios de las páginas de la actividad */
+
+.scene {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--brand) 16%, transparent), color-mix(in srgb, var(--brand-2) 14%, transparent));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  margin: 18px 0;
+}
+.scene h2 { margin-top: 0; }
+
+.tag-method { display:inline-block; font-size:12px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; padding:5px 12px; border-radius:999px; color:#fff; }
+.tag-bem    { background:#6c5ce7; }
+.tag-oocss  { background:#00b894; }
+.tag-smacss { background:#0984e3; }
+
+/* Pasos / misión */
+.mission { display:grid; gap:12px; }
+.mission__item { display:flex; gap:14px; align-items:flex-start; padding:14px 16px; background:var(--bg-elev); border:1px solid var(--border); border-radius:12px; }
+.mission__num { flex:0 0 auto; width:30px; height:30px; border-radius:9px; display:grid; place-items:center; font-weight:900; color:#fff; background:linear-gradient(135deg,var(--brand),var(--brand-2)); }
+
+/* Checklist interactivo (guarda el avance en el navegador) */
+.checklist { list-style:none; padding:0; margin:14px 0; }
+.checklist li { margin:8px 0; }
+.checklist label {
+  display:flex; gap:12px; align-items:flex-start; cursor:pointer;
+  background:var(--bg-elev); border:1px solid var(--border); border-radius:12px; padding:12px 14px;
+  transition:border-color .15s ease, background .15s ease;
+}
+.checklist label:hover { border-color:var(--brand); }
+.checklist input { width:20px; height:20px; margin-top:2px; accent-color:var(--brand); flex:0 0 auto; }
+.checklist input:checked + span { text-decoration:line-through; color:var(--text-soft); }
+
+.progress-wrap { margin:16px 0; }
+.progress-bar { height:12px; border-radius:999px; background:var(--code-bg); overflow:hidden; border:1px solid var(--border); }
+.progress-fill { height:100%; width:0%; background:linear-gradient(90deg,var(--brand),var(--brand-2)); transition:width .3s ease; }
+.progress-text { font-size:13px; color:var(--text-soft); margin-top:6px; font-weight:700; }
+
+.pill-hint { display:inline-block; background:var(--code-bg); border:1px dashed var(--border); border-radius:999px; padding:4px 12px; font-size:13px; margin:4px 6px 4px 0; }
+
+.bonus { border-left:4px solid var(--brand-2); background:color-mix(in srgb, var(--brand-2) 10%, transparent); padding:14px 18px; border-radius:10px; margin:16px 0; }
+.donts { border-left:4px solid #e67e22; background:color-mix(in srgb,#e67e22 10%, transparent); padding:14px 18px; border-radius:10px; margin:16px 0; }
+
+.reto-nav { display:flex; justify-content:space-between; gap:12px; margin:30px 0 10px; flex-wrap:wrap; }
+.reto-nav a { text-decoration:none; font-weight:700; background:var(--bg-elev); border:1px solid var(--border); border-radius:12px; padding:12px 16px; color:var(--text); }
+.reto-nav a:hover { border-color:var(--brand); }

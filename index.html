@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Actividad — Metodologías CSS · BEM · OOCSS · SMACSS</title>
+  <script src="assets/site.js"></script>
+  <link rel="stylesheet" href="assets/site.css" />
+  <link rel="stylesheet" href="assets/activity.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="index.html"><span class="dot"></span> Actividad · Metodologías CSS</a>
+      <nav class="topbar__nav">
+        <a class="navlink" href="bem.html">Reto BEM</a>
+        <a class="navlink" href="oocss.html">Reto OOCSS</a>
+        <a class="navlink" href="smacss.html">Reto SMACSS</a>
+        <a class="navlink" href="entrega.html">Entrega</a>
+        <button id="themeToggle" class="theme-toggle" type="button">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">Actividad práctica · Desarrollo de Interfaz Web</span>
+      <h1>El gran orden del CSS</h1>
+      <p>Tu CSS funciona... pero es un caos: clases que chocan, estilos que no se reutilizan y miedo a borrar nada. Tu misión: <strong>ponerlo en orden</strong> aplicando tres metodologías. Tres retos, una metodología en cada uno. Al final lo publicas en internet con GitHub Pages.</p>
+    </section>
+
+    <section class="section">
+      <div class="panel">
+        <h2>Cómo funciona</h2>
+        <p class="lead">Resuelve <strong>los tres retos por separado</strong> (no mezcles metodologías). Cada reto tiene su escenario, su lista de requisitos y una pista conceptual. Cuando termines, sigue la página de <a href="entrega.html">Entrega</a> para subirlo a GitHub Pages.</p>
+        <div class="note">Cada reto trae un <strong>checklist con barra de progreso</strong> que guarda tu avance en el navegador. Úsalo para no dejarte nada.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Elige tu reto</h2>
+      <div class="grid">
+        <a class="card" href="bem.html">
+          <span class="tag-method tag-bem">BEM</span>
+          <h3>Reto 1 · La tarjeta de perfil</h3>
+          <p>Diseña una tarjeta de perfil de red social nombrando cada pieza con la lógica de bloque, elemento y modificador.</p>
+          <span class="card__cta">Empezar reto →</span>
+        </a>
+        <a class="card" href="oocss.html">
+          <span class="tag-method tag-oocss">OOCSS</span>
+          <h3>Reto 2 · El kit de avisos</h3>
+          <p>Crea un sistema de notificaciones reutilizable separando la forma del color y el contenedor del contenido.</p>
+          <span class="card__cta">Empezar reto →</span>
+        </a>
+        <a class="card" href="smacss.html">
+          <span class="tag-method tag-smacss">SMACSS</span>
+          <h3>Reto 3 · El mini-dashboard</h3>
+          <p>Construye un panel y organiza su CSS en categorías: base, layout, módulos, estados y tema.</p>
+          <span class="card__cta">Empezar reto →</span>
+        </a>
+        <a class="card" href="entrega.html">
+          <span class="tag-method" style="background:var(--text-soft)">ENTREGA</span>
+          <h3>Publica y entrega</h3>
+          <p>Sube tu trabajo a GitHub, actívalo en GitHub Pages y entrega los enlaces.</p>
+          <span class="card__cta">Ver pasos →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="donts">
+        <strong>Reglas del juego:</strong> una metodología por reto (no las combines), nada de copiar la solución de un compañero, y todo debe verse funcionando en tu sitio publicado. La idea es que <em>entiendas</em> cada forma de pensar.
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">Actividad — Metodologías de organización de CSS · Lección 2.</div></footer>
+</body>
+</html>

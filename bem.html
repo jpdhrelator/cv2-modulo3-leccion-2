@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reto 1 · BEM — Actividad Metodologías CSS</title>
+  <script src="assets/site.js"></script>
+  <link rel="stylesheet" href="assets/site.css" />
+  <link rel="stylesheet" href="assets/activity.css" />
+  <script src="assets/checklist.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="index.html"><span class="dot"></span> Actividad · Metodologías CSS</a>
+      <nav class="topbar__nav">
+        <a class="navlink" href="bem.html">Reto BEM</a>
+        <a class="navlink" href="oocss.html">Reto OOCSS</a>
+        <a class="navlink" href="smacss.html">Reto SMACSS</a>
+        <a class="navlink" href="entrega.html">Entrega</a>
+        <button id="themeToggle" class="theme-toggle" type="button">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <a class="back" href="index.html">← Todos los retos</a>
+    <span class="tag-method tag-bem">Reto 1 · BEM</span>
+    <h1>La tarjeta de perfil</h1>
+
+    <div class="scene">
+      <h2>El escenario</h2>
+      <p>Estás creando una nueva red social. El equipo de diseño te pasa una <strong>tarjeta de perfil de usuario</strong> y te pide que la maquetes con CSS <strong>tan ordenado</strong> que cualquier compañero pueda leer tu HTML y entender qué es cada cosa <em>solo por el nombre de las clases</em>. Esa es la promesa de BEM.</p>
+    </div>
+
+    <section class="section">
+      <h2>Tu misión</h2>
+      <p class="lead">Construye una <strong>tarjeta de perfil</strong> que contenga, como mínimo:</p>
+      <div class="mission">
+        <div class="mission__item"><span class="mission__num">1</span><div>Una <strong>foto o avatar</strong> del usuario (puede ser un círculo de color con sus iniciales).</div></div>
+        <div class="mission__item"><span class="mission__num">2</span><div>El <strong>nombre</strong> y una <strong>descripción corta</strong> (bio).</div></div>
+        <div class="mission__item"><span class="mission__num">3</span><div>Una fila de <strong>datos</strong> (por ejemplo: seguidores, siguiendo, publicaciones).</div></div>
+        <div class="mission__item"><span class="mission__num">4</span><div>Dos <strong>botones de acción</strong>: uno principal (Seguir) y uno secundario (Mensaje).</div></div>
+        <div class="mission__item"><span class="mission__num">5</span><div>Una <strong>variante destacada</strong> de la tarjeta (por ejemplo, perfil verificado o premium) que se vea distinta.</div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Requisitos obligatorios</h2>
+      <div class="progress-wrap">
+        <div class="progress-bar"><div class="progress-fill"></div></div>
+        <div class="progress-text">0 de 0</div>
+      </div>
+      <ul class="checklist">
+        <li><label><input type="checkbox"><span>Das estilo <strong>solo con clases</strong>: nada de <code>#id</code> ni de selectores de etiqueta (<code>div</code>, <code>button</code>…) para estilar.</span></label></li>
+        <li><label><input type="checkbox"><span>Todas tus clases siguen la convención de nombres de BEM.</span></label></li>
+        <li><label><input type="checkbox"><span>Defines claramente <strong>1 bloque</strong> (la tarjeta) y al menos <strong>4 elementos</strong> dentro de él.</span></label></li>
+        <li><label><input type="checkbox"><span>Incluyes al menos <strong>un modificador de bloque</strong> (la variante destacada).</span></label></li>
+        <li><label><input type="checkbox"><span>Incluyes al menos <strong>un modificador de elemento</strong> (el botón principal vs el secundario).</span></label></li>
+        <li><label><input type="checkbox"><span>El CSS de este componente vive en <strong>su propio archivo</strong> (p. ej. <code>perfil.css</code>).</span></label></li>
+        <li><label><input type="checkbox"><span>Cada modificador <strong>acompaña</strong> a su clase base (nunca aparece solo en el HTML).</span></label></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Pista (sin spoilers)</h2>
+      <p class="lead">Recuerda la estructura del nombre que vimos en clase. No te decimos qué clases escribir; tú decides los nombres:</p>
+      <span class="pill-hint">bloque</span>
+      <span class="pill-hint">bloque__elemento</span>
+      <span class="pill-hint">bloque--modificador</span>
+      <span class="pill-hint">bloque__elemento--modificador</span>
+      <p class="lead" style="margin-top:12px">Antes de escribir CSS, dibuja la tarjeta en papel y rodea cada parte: ¿qué es el bloque? ¿qué partes son elementos? ¿qué cambia entre la versión normal y la destacada? Eso te da los nombres.</p>
+    </section>
+
+    <section class="section">
+      <div class="bonus">
+        <strong>Reto extra (opcional):</strong> añade un segundo bloque reutilizable independiente de la tarjeta (por ejemplo, una <em>insignia</em> o <em>etiqueta</em> de "PRO") y úsalo dentro de la tarjeta sin acoplarlo a ella.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>¿Cómo sé que está bien?</h2>
+      <p class="lead">Tápale el CSS a un compañero y muéstrale solo tu HTML. Si puede decirte cuál es el bloque, cuáles son los elementos y cuáles los modificadores <strong>solo leyendo los nombres de clase</strong>, lo lograste.</p>
+    </section>
+
+    <div class="reto-nav">
+      <a href="index.html">← Todos los retos</a>
+      <a href="oocss.html">Siguiente: Reto OOCSS →</a>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">Reto 1 · BEM — Actividad Lección 2.</div></footer>
+</body>
+</html>

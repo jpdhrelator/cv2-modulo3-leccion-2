@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrega — Actividad Metodologías CSS</title>
+  <script src="assets/site.js"></script>
+  <link rel="stylesheet" href="assets/site.css" />
+  <link rel="stylesheet" href="assets/activity.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="index.html"><span class="dot"></span> Actividad · Metodologías CSS</a>
+      <nav class="topbar__nav">
+        <a class="navlink" href="bem.html">Reto BEM</a>
+        <a class="navlink" href="oocss.html">Reto OOCSS</a>
+        <a class="navlink" href="smacss.html">Reto SMACSS</a>
+        <a class="navlink" href="entrega.html">Entrega</a>
+        <button id="themeToggle" class="theme-toggle" type="button">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <a class="back" href="index.html">← Todos los retos</a>
+    <span class="tag-method" style="background:var(--text-soft)">Entrega</span>
+    <h1>Publica tu trabajo en internet</h1>
+    <p class="lead">Vas a subir tu actividad a GitHub y a publicarla con <strong>GitHub Pages</strong> para que tenga una URL pública. Entregas esa URL más el enlace del repositorio.</p>
+
+    <section class="section">
+      <h2>1 · Organiza tu repositorio</h2>
+      <p class="lead">Una carpeta por reto y una portada que enlace a las tres:</p>
+      <pre><code>tu-repositorio/
+├── index.html      (portada con enlaces a los 3 retos)
+├── bem/
+│   └── index.html  (+ tus .css)
+├── oocss/
+│   └── index.html  (+ tus .css)
+└── smacss/
+    ├── index.html
+    └── css/        (base, layout, module, state, theme)</code></pre>
+    </section>
+
+    <section class="section">
+      <h2>2 · Súbelo con git</h2>
+      <pre><code>git init
+git add .
+git commit -m "Actividad metodologías CSS"
+git branch -M main
+git remote add origin https://github.com/TU_USUARIO/TU_REPO.git
+git push -u origin main</code></pre>
+      <div class="note">Haz <strong>varios commits</strong> con mensajes claros mientras avanzas (uno por reto, por ejemplo). También cuenta en la evaluación.</div>
+    </section>
+
+    <section class="section">
+      <h2>3 · Activa GitHub Pages</h2>
+      <ul class="steps">
+        <li>En tu repo, entra en <strong>Settings → Pages</strong>.</li>
+        <li>En "Build and deployment", elige <strong>Deploy from a branch</strong>.</li>
+        <li>Selecciona la rama <code>main</code> y la carpeta <code>/ (root)</code>. Guarda.</li>
+        <li>Espera 1-2 minutos y abre la <strong>URL pública</strong> que aparece arriba.</li>
+        <li>Comprueba que se ven los tres retos desde tu portada.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>4 · Qué entregar</h2>
+      <div class="panel">
+        <p class="lead">Pega en la entrega:</p>
+        <p>🔗 <strong>URL de GitHub Pages</strong> (tu sitio publicado).<br>
+           🔗 <strong>URL del repositorio</strong> en GitHub.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Cómo se evalúa</h2>
+      <table>
+        <thead><tr><th>Criterio</th><th>Qué miramos</th></tr></thead>
+        <tbody>
+          <tr><td>BEM correcto</td><td>Solo clases, convención de nombres, bloque/elemento/modificador bien usados.</td></tr>
+          <tr><td>OOCSS correcto</td><td>Estructura separada de skin, objetos reutilizables, sin reglas atadas al contenedor.</td></tr>
+          <tr><td>SMACSS correcto</td><td>CSS repartido en las 5 categorías y estados funcionando con JS.</td></tr>
+          <tr><td>Git y entrega</td><td>Repo ordenado, commits claros y GitHub Pages publicado y funcionando.</td></tr>
+        </tbody>
+      </table>
+      <div class="donts">Una metodología por reto. No mezcles BEM, OOCSS y SMACSS en el mismo reto: la gracia es practicar cada lógica por separado.</div>
+    </section>
+
+    <div class="reto-nav">
+      <a href="smacss.html">← Reto SMACSS</a>
+      <a href="index.html">Volver a la portada →</a>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">Entrega — Actividad Lección 2.</div></footer>
+</body>
+</html>
